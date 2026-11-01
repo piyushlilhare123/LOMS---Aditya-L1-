@@ -1,0 +1,493 @@
+@import "tailwindcss";
+
+:root {
+  --background: #05070a;
+  --foreground: #e6edf3;
+
+  --panel: #0b0f14;
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --accent: #ff8c42;
+  --accent-dim: rgba(255, 140, 66, 0.15);
+
+  --status-idle: #facc15;
+  --status-active: #22c55e;
+  --status-returning: #3b82f6;
+  --status-warning: #f97316;
+  --status-failed: #ef4444;
+
+  --muted: #8b949e;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-panel: var(--panel);
+  --color-panel-border: var(--panel-border);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+  --color-muted: var(--muted);
+
+  --font-sans: var(--font-heading);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-heading), Arial, Helvetica, sans-serif;
+}
+
+.font-telemetry {
+  font-family: var(--font-mono), monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================================
+   SOLEXS SOLAR INTELLIGENCE
+   ========================================================= */
+
+.solar-panel {
+  width: 360px;
+  padding: 18px;
+  border: 1px solid rgba(255, 170, 70, 0.25);
+  border-radius: 16px;
+  background: rgba(10, 8, 18, 0.88);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 0 35px rgba(255, 140, 30, 0.08),
+    inset 0 0 25px rgba(255, 160, 60, 0.025);
+  color: #fff;
+}
+
+.solar-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.solar-icon {
+  margin-right: 8px;
+}
+
+.solar-live {
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(70, 220, 130, 0.12);
+  border: 1px solid rgba(70, 220, 130, 0.3);
+  color: #6df0a1;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.solar-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.solar-stat {
+  padding: 12px 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.035);
+  text-align: center;
+}
+
+.solar-stat.validated {
+  border: 1px solid rgba(255, 160, 50, 0.2);
+}
+
+.solar-stat-value {
+  display: block;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.solar-stat-label {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 7px;
+  letter-spacing: 0.8px;
+}
+
+.solar-section-title {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+}
+
+.solar-severity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.solar-severity-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 10px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 10px;
+}
+
+.solar-severity-row strong {
+  font-weight: 600;
+}
+
+.solar-model {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.solar-model span {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.solar-model strong {
+  font-size: 11px;
+}
+
+.solar-model small {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 8px;
+}
+
+.solar-loading,
+.solar-error {
+  padding: 25px 5px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  text-align: center;
+}
+
+
+/* =========================================================
+   CRITICAL SOLAR ALERT
+   ========================================================= */
+
+.solar-critical-alert {
+  width: 360px;
+  padding: 18px;
+  border: 1px solid rgba(255, 70, 50, 0.35);
+  border-radius: 16px;
+  background: rgba(24, 8, 10, 0.9);
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 0 40px rgba(255, 60, 30, 0.1),
+    inset 0 0 25px rgba(255, 60, 30, 0.025);
+}
+
+.solar-critical-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.solar-critical-title {
+  color: #ffb18a;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.solar-critical-title span {
+  margin-right: 8px;
+}
+
+.solar-critical-badge {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(255, 60, 40, 0.12);
+  border: 1px solid rgba(255, 80, 50, 0.35);
+  color: #ff826e;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.solar-critical-event {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 8px;
+  letter-spacing: 1px;
+}
+
+.solar-critical-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.solar-critical-grid > div {
+  padding: 9px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.solar-critical-grid span {
+  display: block;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 7px;
+  letter-spacing: 0.8px;
+}
+
+.solar-critical-grid strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.solar-critical-time {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 8px;
+}
+
+/* =========================================================
+   LOMS SOLAR INTELLIGENCE UI
+   ========================================================= */
+
+.solar-alert-card {
+  width: 420px;
+  max-width: calc(100vw - 40px);
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(18, 8, 12, 0.96),
+      rgba(8, 7, 12, 0.94)
+    );
+
+  border: 1px solid rgba(255, 95, 45, 0.38);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.45),
+    0 0 40px rgba(255, 65, 20, 0.08);
+
+  backdrop-filter: blur(18px);
+
+  color: #f5f5f5;
+
+  overflow: hidden;
+}
+
+.solar-alert-critical {
+  border-color: rgba(255, 70, 40, 0.65);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.5),
+    0 0 35px rgba(255, 50, 20, 0.14);
+}
+
+.solar-alert-empty {
+  border-color: rgba(0, 220, 120, 0.3);
+}
+
+.solar-alert-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+}
+
+.solar-alert-title {
+  font-size: 14px;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  color: #ffb08d;
+}
+
+.solar-alert-subtitle {
+  margin-top: 5px;
+
+  font-size: 10px;
+
+  letter-spacing: 0.08em;
+
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.solar-live-dot {
+  padding: 5px 10px;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  color: #61ffa6;
+
+  background: rgba(30, 220, 120, 0.08);
+
+  border: 1px solid rgba(30, 220, 120, 0.35);
+}
+
+.solar-event-id {
+  margin-bottom: 10px;
+
+  font-size: 10px;
+
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.solar-alert-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+
+  margin-bottom: 10px;
+}
+
+.solar-alert-probability,
+.solar-alert-severity {
+  min-height: 82px;
+
+  padding: 14px;
+
+  border-radius: 13px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.solar-alert-probability span,
+.solar-alert-severity span,
+.solar-alert-grid span,
+.solar-alert-type span,
+.solar-alert-time span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.1em;
+
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.solar-alert-probability strong {
+  font-size: 27px;
+
+  color: #ffb08d;
+}
+
+.solar-alert-severity strong {
+  font-size: 17px;
+
+  color: #ff7758;
+}
+
+.solar-alert-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 8px;
+
+  margin-bottom: 10px;
+}
+
+.solar-alert-grid > div {
+  min-height: 62px;
+
+  padding: 12px;
+
+  border-radius: 11px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(255, 255, 255, 0.045);
+}
+
+.solar-alert-grid strong {
+  display: block;
+
+  font-size: 11px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+.solar-alert-type,
+.solar-alert-time {
+  padding: 12px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.solar-alert-type strong,
+.solar-alert-time strong {
+  display: block;
+
+  font-size: 10px;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  line-height: 1.4;
+}
+
+.solar-alert-time {
+  padding-bottom: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .solar-alert-card {
+    width: 100%;
+
+    padding: 16px;
+
+    border-radius: 16px;
+  }
+
+  .solar-alert-main {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-alert-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .solar-alert-probability strong {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,880 @@
+{
+    "metadata": {
+        "mission": "Aditya-L1",
+        "system": "LOMS AI (Unified Intelligence)",
+        "forecast_duration_hours": 24,
+        "resolution_minutes": 10,
+        "risk_summary": {
+            "SAFE": 113,
+            "HIGH": 23,
+            "CRITICAL": 5,
+            "MODERATE": 3
+        }
+    },
+    "timeline": [
+        {
+            "FORECAST_TIME": "2026-08-24 00:00:00",
+            "HEL1OS_FLUX": 867.25,
+            "SOLEXS_PREDICTED_FLUX": 4457.665,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 00:10:00",
+            "HEL1OS_FLUX": 1019.29,
+            "SOLEXS_PREDICTED_FLUX": 7222.800299999999,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 00:20:00",
+            "HEL1OS_FLUX": 1105.38,
+            "SOLEXS_PREDICTED_FLUX": 9791.526246,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 00:30:00",
+            "HEL1OS_FLUX": 1351.16,
+            "SOLEXS_PREDICTED_FLUX": 12758.11152172,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 00:40:00",
+            "HEL1OS_FLUX": 940.84,
+            "SOLEXS_PREDICTED_FLUX": 13754.5914478104,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 00:50:00",
+            "HEL1OS_FLUX": 928.45,
+            "SOLEXS_PREDICTED_FLUX": 14528.339987204528,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 01:00:00",
+            "HEL1OS_FLUX": 1189.38,
+            "SOLEXS_PREDICTED_FLUX": 16076.068789507712,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 01:10:00",
+            "HEL1OS_FLUX": 1362.56,
+            "SOLEXS_PREDICTED_FLUX": 17951.336407396324,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 01:20:00",
+            "HEL1OS_FLUX": 1287.11,
+            "SOLEXS_PREDICTED_FLUX": 19224.980854064983,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 01:30:00",
+            "HEL1OS_FLUX": 891.8,
+            "SOLEXS_PREDICTED_FLUX": 18885.78430033329,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 01:40:00",
+            "HEL1OS_FLUX": 796.22,
+            "SOLEXS_PREDICTED_FLUX": 18273.11312627329,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 01:50:00",
+            "HEL1OS_FLUX": 938.86,
+            "SOLEXS_PREDICTED_FLUX": 18269.9627635441,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 02:00:00",
+            "HEL1OS_FLUX": 952.22,
+            "SOLEXS_PREDICTED_FLUX": 18314.13946610616,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 02:10:00",
+            "HEL1OS_FLUX": 879.51,
+            "SOLEXS_PREDICTED_FLUX": 18095.87936220705,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 02:20:00",
+            "HEL1OS_FLUX": 809.72,
+            "SOLEXS_PREDICTED_FLUX": 17672.641077009783,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 02:30:00",
+            "HEL1OS_FLUX": 962.96,
+            "SOLEXS_PREDICTED_FLUX": 17861.92568314802,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 02:40:00",
+            "HEL1OS_FLUX": 927.97,
+            "SOLEXS_PREDICTED_FLUX": 17894.674060181376,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 02:50:00",
+            "HEL1OS_FLUX": 999.37,
+            "SOLEXS_PREDICTED_FLUX": 18171.42772934873,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 03:00:00",
+            "HEL1OS_FLUX": 925.91,
+            "SOLEXS_PREDICTED_FLUX": 18141.25573806596,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 03:10:00",
+            "HEL1OS_FLUX": 885.51,
+            "SOLEXS_PREDICTED_FLUX": 17975.114705214084,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 03:20:00",
+            "HEL1OS_FLUX": 916.32,
+            "SOLEXS_PREDICTED_FLUX": 17946.71405827555,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 03:30:00",
+            "HEL1OS_FLUX": 923.48,
+            "SOLEXS_PREDICTED_FLUX": 17948.48552778595,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 03:40:00",
+            "HEL1OS_FLUX": 916.94,
+            "SOLEXS_PREDICTED_FLUX": 17927.04813278448,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 03:50:00",
+            "HEL1OS_FLUX": 933.13,
+            "SOLEXS_PREDICTED_FLUX": 17966.134468883272,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 04:00:00",
+            "HEL1OS_FLUX": 862.78,
+            "SOLEXS_PREDICTED_FLUX": 17751.96026448428,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 04:10:00",
+            "HEL1OS_FLUX": 1150.49,
+            "SOLEXS_PREDICTED_FLUX": 18583.322416877112,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 04:20:00",
+            "HEL1OS_FLUX": 923.87,
+            "SOLEXS_PREDICTED_FLUX": 18471.86938183923,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 04:30:00",
+            "HEL1OS_FLUX": 1126.15,
+            "SOLEXS_PREDICTED_FLUX": 19088.45789310817,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 04:40:00",
+            "HEL1OS_FLUX": 846.89,
+            "SOLEXS_PREDICTED_FLUX": 18616.650472348698,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 04:50:00",
+            "HEL1OS_FLUX": 978.75,
+            "SOLEXS_PREDICTED_FLUX": 18691.27838732593,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 05:00:00",
+            "HEL1OS_FLUX": 840.73,
+            "SOLEXS_PREDICTED_FLUX": 18269.403277607264,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 05:10:00",
+            "HEL1OS_FLUX": 970.15,
+            "SOLEXS_PREDICTED_FLUX": 18376.43568763796,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 05:20:00",
+            "HEL1OS_FLUX": 867.78,
+            "SOLEXS_PREDICTED_FLUX": 18105.90726386313,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 05:30:00",
+            "HEL1OS_FLUX": 940.04,
+            "SOLEXS_PREDICTED_FLUX": 18136.983956367763,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 05:40:00",
+            "HEL1OS_FLUX": 983.76,
+            "SOLEXS_PREDICTED_FLUX": 18315.486844221567,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 05:50:00",
+            "HEL1OS_FLUX": 983.54,
+            "SOLEXS_PREDICTED_FLUX": 18461.08921226168,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 06:00:00",
+            "HEL1OS_FLUX": 2137.59,
+            "SOLEXS_PREDICTED_FLUX": 22619.65815405458,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 06:10:00",
+            "HEL1OS_FLUX": 2262.1,
+            "SOLEXS_PREDICTED_FLUX": 26465.469686324755,
+            "UNIFIED_RISK": "CRITICAL"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 06:20:00",
+            "HEL1OS_FLUX": 1235.71,
+            "SOLEXS_PREDICTED_FLUX": 26026.670142786297,
+            "UNIFIED_RISK": "CRITICAL"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 06:30:00",
+            "HEL1OS_FLUX": 1066.72,
+            "SOLEXS_PREDICTED_FLUX": 25075.389517084765,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 06:40:00",
+            "HEL1OS_FLUX": 943.28,
+            "SOLEXS_PREDICTED_FLUX": 23863.299404009504,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 06:50:00",
+            "HEL1OS_FLUX": 1119.79,
+            "SOLEXS_PREDICTED_FLUX": 23487.17051128779,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 07:00:00",
+            "HEL1OS_FLUX": 952.97,
+            "SOLEXS_PREDICTED_FLUX": 22594.874819255987,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 07:10:00",
+            "HEL1OS_FLUX": 1046.52,
+            "SOLEXS_PREDICTED_FLUX": 22190.617351789908,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 07:20:00",
+            "HEL1OS_FLUX": 941.37,
+            "SOLEXS_PREDICTED_FLUX": 21491.10122846772,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 07:30:00",
+            "HEL1OS_FLUX": 1073.37,
+            "SOLEXS_PREDICTED_FLUX": 21379.49800734353,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 07:40:00",
+            "HEL1OS_FLUX": 923.22,
+            "SOLEXS_PREDICTED_FLUX": 20762.45836602169,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 07:50:00",
+            "HEL1OS_FLUX": 963.29,
+            "SOLEXS_PREDICTED_FLUX": 20396.730860137784,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 08:00:00",
+            "HEL1OS_FLUX": 846.23,
+            "SOLEXS_PREDICTED_FLUX": 19687.124305312984,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 08:10:00",
+            "HEL1OS_FLUX": 904.7,
+            "SOLEXS_PREDICTED_FLUX": 19309.891930356647,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 08:20:00",
+            "HEL1OS_FLUX": 844.62,
+            "SOLEXS_PREDICTED_FLUX": 18790.281382892448,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 08:30:00",
+            "HEL1OS_FLUX": 968.46,
+            "SOLEXS_PREDICTED_FLUX": 18797.640733971806,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 08:40:00",
+            "HEL1OS_FLUX": 794.33,
+            "SOLEXS_PREDICTED_FLUX": 18194.22040185688,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 08:50:00",
+            "HEL1OS_FLUX": 917.64,
+            "SOLEXS_PREDICTED_FLUX": 18131.00072952264,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 09:00:00",
+            "HEL1OS_FLUX": 715.94,
+            "SOLEXS_PREDICTED_FLUX": 17373.210598208563,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 09:10:00",
+            "HEL1OS_FLUX": 887.42,
+            "SOLEXS_PREDICTED_FLUX": 17352.002690531022,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 09:20:00",
+            "HEL1OS_FLUX": 866.09,
+            "SOLEXS_PREDICTED_FLUX": 17259.95720623544,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 09:30:00",
+            "HEL1OS_FLUX": 1079.12,
+            "SOLEXS_PREDICTED_FLUX": 17930.08490911306,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 09:40:00",
+            "HEL1OS_FLUX": 731.58,
+            "SOLEXS_PREDICTED_FLUX": 17263.199625472706,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 09:50:00",
+            "HEL1OS_FLUX": 1089.39,
+            "SOLEXS_PREDICTED_FLUX": 17968.68869288762,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 10:00:00",
+            "HEL1OS_FLUX": 997.25,
+            "SOLEXS_PREDICTED_FLUX": 18224.69972816785,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 10:10:00",
+            "HEL1OS_FLUX": 822.95,
+            "SOLEXS_PREDICTED_FLUX": 17824.578777097635,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 10:20:00",
+            "HEL1OS_FLUX": 1348.61,
+            "SOLEXS_PREDICTED_FLUX": 19336.28959722006,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 10:30:00",
+            "HEL1OS_FLUX": 1319.73,
+            "SOLEXS_PREDICTED_FLUX": 20474.812469720448,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 10:40:00",
+            "HEL1OS_FLUX": 1518.75,
+            "SOLEXS_PREDICTED_FLUX": 22104.971225170764,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 10:50:00",
+            "HEL1OS_FLUX": 957.11,
+            "SOLEXS_PREDICTED_FLUX": 21475.961404640024,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 11:00:00",
+            "HEL1OS_FLUX": 1083.5,
+            "SOLEXS_PREDICTED_FLUX": 21402.53835180482,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 11:10:00",
+            "HEL1OS_FLUX": 1013.93,
+            "SOLEXS_PREDICTED_FLUX": 21098.83644847995,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 11:20:00",
+            "HEL1OS_FLUX": 1227.77,
+            "SOLEXS_PREDICTED_FLUX": 21598.24088775356,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 11:30:00",
+            "HEL1OS_FLUX": 1211.29,
+            "SOLEXS_PREDICTED_FLUX": 21950.072527957916,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 11:40:00",
+            "HEL1OS_FLUX": 963.47,
+            "SOLEXS_PREDICTED_FLUX": 21371.20447292549,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 11:50:00",
+            "HEL1OS_FLUX": 880.71,
+            "SOLEXS_PREDICTED_FLUX": 20606.8726677989,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 12:00:00",
+            "HEL1OS_FLUX": 986.27,
+            "SOLEXS_PREDICTED_FLUX": 20349.580587595097,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 12:10:00",
+            "HEL1OS_FLUX": 1138.83,
+            "SOLEXS_PREDICTED_FLUX": 20672.56108182798,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 12:20:00",
+            "HEL1OS_FLUX": 1788.01,
+            "SOLEXS_PREDICTED_FLUX": 23209.535087098942,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 12:30:00",
+            "HEL1OS_FLUX": 1856.1,
+            "SOLEXS_PREDICTED_FLUX": 25528.16877142113,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 12:40:00",
+            "HEL1OS_FLUX": 1716.39,
+            "SOLEXS_PREDICTED_FLUX": 26940.463392565325,
+            "UNIFIED_RISK": "CRITICAL"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 12:50:00",
+            "HEL1OS_FLUX": 1030.68,
+            "SOLEXS_PREDICTED_FLUX": 25698.559981903567,
+            "UNIFIED_RISK": "MODERATE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 13:00:00",
+            "HEL1OS_FLUX": 1010.04,
+            "SOLEXS_PREDICTED_FLUX": 24607.95918516092,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 13:10:00",
+            "HEL1OS_FLUX": 1084.16,
+            "SOLEXS_PREDICTED_FLUX": 23973.08653183196,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 13:20:00",
+            "HEL1OS_FLUX": 1110.52,
+            "SOLEXS_PREDICTED_FLUX": 23544.7509561022,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 13:30:00",
+            "HEL1OS_FLUX": 970.84,
+            "SOLEXS_PREDICTED_FLUX": 22704.635784003804,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 13:40:00",
+            "HEL1OS_FLUX": 1024.45,
+            "SOLEXS_PREDICTED_FLUX": 22203.37634288312,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 13:50:00",
+            "HEL1OS_FLUX": 994.86,
+            "SOLEXS_PREDICTED_FLUX": 21688.77860116416,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 14:00:00",
+            "HEL1OS_FLUX": 1138.81,
+            "SOLEXS_PREDICTED_FLUX": 21770.633452954607,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 14:10:00",
+            "HEL1OS_FLUX": 713.78,
+            "SOLEXS_PREDICTED_FLUX": 20350.14943142278,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 14:20:00",
+            "HEL1OS_FLUX": 829.27,
+            "SOLEXS_PREDICTED_FLUX": 19589.56753376668,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 14:30:00",
+            "HEL1OS_FLUX": 803.22,
+            "SOLEXS_PREDICTED_FLUX": 18874.715377688677,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 14:40:00",
+            "HEL1OS_FLUX": 1030.55,
+            "SOLEXS_PREDICTED_FLUX": 19084.19160970471,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 14:50:00",
+            "HEL1OS_FLUX": 848.17,
+            "SOLEXS_PREDICTED_FLUX": 18617.632119957863,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 15:00:00",
+            "HEL1OS_FLUX": 1180.79,
+            "SOLEXS_PREDICTED_FLUX": 19399.22333836545,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 15:10:00",
+            "HEL1OS_FLUX": 977.78,
+            "SOLEXS_PREDICTED_FLUX": 19329.593137459666,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 15:20:00",
+            "HEL1OS_FLUX": 1625.55,
+            "SOLEXS_PREDICTED_FLUX": 21539.691372716927,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 15:30:00",
+            "HEL1OS_FLUX": 2600.49,
+            "SOLEXS_PREDICTED_FLUX": 26764.26192562788,
+            "UNIFIED_RISK": "CRITICAL"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 15:40:00",
+            "HEL1OS_FLUX": 1709.2,
+            "SOLEXS_PREDICTED_FLUX": 27928.89477901486,
+            "UNIFIED_RISK": "CRITICAL"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 15:50:00",
+            "HEL1OS_FLUX": 1136.02,
+            "SOLEXS_PREDICTED_FLUX": 26877.763718792183,
+            "UNIFIED_RISK": "MODERATE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 16:00:00",
+            "HEL1OS_FLUX": 1038.28,
+            "SOLEXS_PREDICTED_FLUX": 25673.74624940959,
+            "UNIFIED_RISK": "MODERATE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 16:10:00",
+            "HEL1OS_FLUX": 917.42,
+            "SOLEXS_PREDICTED_FLUX": 24263.441924515864,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 16:20:00",
+            "HEL1OS_FLUX": 1045.83,
+            "SOLEXS_PREDICTED_FLUX": 23556.42737810301,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 16:30:00",
+            "HEL1OS_FLUX": 854.2,
+            "SOLEXS_PREDICTED_FLUX": 22305.970450044464,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 16:40:00",
+            "HEL1OS_FLUX": 899.45,
+            "SOLEXS_PREDICTED_FLUX": 21438.97076903646,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 16:50:00",
+            "HEL1OS_FLUX": 1012.66,
+            "SOLEXS_PREDICTED_FLUX": 21124.2660306099,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 17:00:00",
+            "HEL1OS_FLUX": 942.26,
+            "SOLEXS_PREDICTED_FLUX": 20619.80814510012,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 17:10:00",
+            "HEL1OS_FLUX": 946.13,
+            "SOLEXS_PREDICTED_FLUX": 20219.69767898209,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 17:20:00",
+            "HEL1OS_FLUX": 1430.25,
+            "SOLEXS_PREDICTED_FLUX": 21586.027096765312,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 17:30:00",
+            "HEL1OS_FLUX": 1102.7,
+            "SOLEXS_PREDICTED_FLUX": 21559.992219347558,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 17:40:00",
+            "HEL1OS_FLUX": 1033.81,
+            "SOLEXS_PREDICTED_FLUX": 21297.528619864992,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 17:50:00",
+            "HEL1OS_FLUX": 940.21,
+            "SOLEXS_PREDICTED_FLUX": 20754.708468289293,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 18:00:00",
+            "HEL1OS_FLUX": 940.97,
+            "SOLEXS_PREDICTED_FLUX": 20312.25594399722,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 18:10:00",
+            "HEL1OS_FLUX": 1005.64,
+            "SOLEXS_PREDICTED_FLUX": 20175.789874077724,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 18:20:00",
+            "HEL1OS_FLUX": 1164.98,
+            "SOLEXS_PREDICTED_FLUX": 20621.57769674373,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 18:30:00",
+            "HEL1OS_FLUX": 1183.26,
+            "SOLEXS_PREDICTED_FLUX": 21051.103711329863,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 18:40:00",
+            "HEL1OS_FLUX": 919.74,
+            "SOLEXS_PREDICTED_FLUX": 20480.995043290488,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 18:50:00",
+            "HEL1OS_FLUX": 897.77,
+            "SOLEXS_PREDICTED_FLUX": 19936.6109354982,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 19:00:00",
+            "HEL1OS_FLUX": 785.71,
+            "SOLEXS_PREDICTED_FLUX": 19098.00596710852,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 19:10:00",
+            "HEL1OS_FLUX": 959.13,
+            "SOLEXS_PREDICTED_FLUX": 19017.319893028987,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 19:20:00",
+            "HEL1OS_FLUX": 1126.74,
+            "SOLEXS_PREDICTED_FLUX": 19537.792312283767,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 19:30:00",
+            "HEL1OS_FLUX": 771.48,
+            "SOLEXS_PREDICTED_FLUX": 18721.16969607269,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 19:40:00",
+            "HEL1OS_FLUX": 808.15,
+            "SOLEXS_PREDICTED_FLUX": 18179.88415077961,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 19:50:00",
+            "HEL1OS_FLUX": 1001.5,
+            "SOLEXS_PREDICTED_FLUX": 18412.75500363928,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 20:00:00",
+            "HEL1OS_FLUX": 861.29,
+            "SOLEXS_PREDICTED_FLUX": 18112.974102984208,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 20:10:00",
+            "HEL1OS_FLUX": 1152.57,
+            "SOLEXS_PREDICTED_FLUX": 18886.63376444705,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 20:20:00",
+            "HEL1OS_FLUX": 1125.08,
+            "SOLEXS_PREDICTED_FLUX": 19424.819686846586,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 20:30:00",
+            "HEL1OS_FLUX": 1610.31,
+            "SOLEXS_PREDICTED_FLUX": 21564.4371432142,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 20:40:00",
+            "HEL1OS_FLUX": 1765.25,
+            "SOLEXS_PREDICTED_FLUX": 23861.21345743564,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 20:50:00",
+            "HEL1OS_FLUX": 1592.78,
+            "SOLEXS_PREDICTED_FLUX": 25140.92503509722,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 21:00:00",
+            "HEL1OS_FLUX": 640.04,
+            "SOLEXS_PREDICTED_FLUX": 22855.69852877972,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 21:10:00",
+            "HEL1OS_FLUX": 821.79,
+            "SOLEXS_PREDICTED_FLUX": 21617.93779359937,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 21:20:00",
+            "HEL1OS_FLUX": 847.82,
+            "SOLEXS_PREDICTED_FLUX": 20694.07899075148,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 21:30:00",
+            "HEL1OS_FLUX": 927.88,
+            "SOLEXS_PREDICTED_FLUX": 20216.72477241621,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 21:40:00",
+            "HEL1OS_FLUX": 1028.47,
+            "SOLEXS_PREDICTED_FLUX": 20177.359313381297,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 21:50:00",
+            "HEL1OS_FLUX": 617.84,
+            "SOLEXS_PREDICTED_FLUX": 18707.87463697266,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 22:00:00",
+            "HEL1OS_FLUX": 1134.63,
+            "SOLEXS_PREDICTED_FLUX": 19311.66220231758,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 22:10:00",
+            "HEL1OS_FLUX": 901.53,
+            "SOLEXS_PREDICTED_FLUX": 18990.91800590041,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 22:20:00",
+            "HEL1OS_FLUX": 1572.78,
+            "SOLEXS_PREDICTED_FLUX": 21077.28276483834,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 22:30:00",
+            "HEL1OS_FLUX": 1394.8,
+            "SOLEXS_PREDICTED_FLUX": 22165.171867167435,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 22:40:00",
+            "HEL1OS_FLUX": 981.19,
+            "SOLEXS_PREDICTED_FLUX": 21609.605931077294,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 22:50:00",
+            "HEL1OS_FLUX": 1020.85,
+            "SOLEXS_PREDICTED_FLUX": 21292.85186348338,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 23:00:00",
+            "HEL1OS_FLUX": 1160.94,
+            "SOLEXS_PREDICTED_FLUX": 21523.42852805637,
+            "UNIFIED_RISK": "HIGH"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 23:10:00",
+            "HEL1OS_FLUX": 1094.86,
+            "SOLEXS_PREDICTED_FLUX": 21481.221393006224,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 23:20:00",
+            "HEL1OS_FLUX": 962.38,
+            "SOLEXS_PREDICTED_FLUX": 20982.931542265105,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 23:30:00",
+            "HEL1OS_FLUX": 1015.38,
+            "SOLEXS_PREDICTED_FLUX": 20759.833864657383,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 23:40:00",
+            "HEL1OS_FLUX": 910.5,
+            "SOLEXS_PREDICTED_FLUX": 20209.81376901905,
+            "UNIFIED_RISK": "SAFE"
+        },
+        {
+            "FORECAST_TIME": "2026-08-24 23:50:00",
+            "HEL1OS_FLUX": 886.02,
+            "SOLEXS_PREDICTED_FLUX": 19673.117290595623,
+            "UNIFIED_RISK": "SAFE"
+        }
+    ]
+}

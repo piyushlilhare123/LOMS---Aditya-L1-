@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOMS Socket Test</title>
+  <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+</head>
+<body style="font-family: monospace; background: #111; color: #0f0; padding: 20px;">
+  <h2>🛰️ LOMS Live Rover Feed</h2>
+  <div id="output"></div>
+
+  <script>
+    const socket = io("http://localhost:5000");
+
+    socket.on("connect", () => {
+      console.log("Connected:", socket.id);
+      document.getElementById("output").innerHTML += "<p>✅ Connected to server</p>";
+    });
+
+    socket.on("rover:update", (rover) => {
+      console.log("Rover update:", rover);
+      const div = document.createElement("div");
+      div.innerHTML = `<p>🤖 ${rover.roverId} | Battery: ${rover.battery.toFixed(1)}% | Status: ${rover.status} | Pos: (${rover.position.lat.toFixed(3)}, ${rover.position.lng.toFixed(3)})</p>`;
+      document.getElementById("output").prepend(div);
+    });
+  </script>
+</body>
+</html>

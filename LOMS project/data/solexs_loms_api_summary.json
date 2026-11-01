@@ -1,0 +1,45 @@
+{
+  "system": "LOMS",
+  "pipeline": "SOLEXS Solar Flare Intelligence",
+  "totalEvents": 28470,
+  "scientificallyValidatedEvents": 2489,
+  "mlOnlyCandidates": 25981,
+  "severityDistribution": {
+    "LOW": 17938,
+    "BACKGROUND": 8043,
+    "CRITICAL": 2175,
+    "HIGH": 240,
+    "MODERATE": 74
+  },
+  "confidenceDistribution": {
+    "MEDIUM": 9816,
+    "VERY_HIGH": 8247,
+    "HIGH": 8177,
+    "LOW": 2230
+  },
+  "eventTypeDistribution": {
+    "ML_DETECTED_CANDIDATE": 25981,
+    "SCIENTIFICALLY_VALIDATED_FLARE": 2489
+  },
+  "morphologyDistribution": {
+    "UNMATCHED": 25981,
+    "MULTI_PEAK": 2379,
+    "GRADUAL_RISE": 66,
+    "OTHER": 30,
+    "LONG_DURATION": 13,
+    "RAPID_RISE": 1
+  },
+  "strengthDistribution": {
+    "UNMATCHED": 25981,
+    "WEAK": 1715,
+    "MODERATE": 635,
+    "VERY_WEAK": 112,
+    "STRONG": 26,
+    "VERY_STRONG": 1
+  },
+  "model": {
+    "type": "RandomForestClassifier",
+    "threshold": 0.4,
+    "trees": 200
+  }
+}
