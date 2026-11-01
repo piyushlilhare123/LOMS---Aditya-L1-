@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 interface CreateModalProps {
   onClose: () => void;
-  onCreated: () => void; // trigger a refetch after success
+  onCreated: (msg?: string) => void; // trigger a refetch after success
 }
 
 type Tab = 'rover' | 'mission';

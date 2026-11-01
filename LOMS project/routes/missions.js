@@ -27,6 +27,9 @@ router.post('/', async (req, res) => {
       mission.estimatedEnergyCost = allocation.energyCost;
       await mission.save();
 
+      // Broadcast rover update immediately
+      emitUpdate('rover:update', allocation.rover);
+
       return res.status(201).json({
         message: 'Mission created and rover assigned automatically',
         mission,

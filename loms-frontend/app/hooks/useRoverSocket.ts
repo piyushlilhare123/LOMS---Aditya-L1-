@@ -52,7 +52,7 @@ export function useRoverSocket() {
   const [connected, setConnected] = useState(false);
 
   useEffect(() => {
-    const socket: Socket = io(SOCKET_URL);
+    const socket: Socket = io(SOCKET_URL, { transports: ['websocket', 'polling'] });
 
     socket.on('connect', () => {
       console.log('✅ Socket connected:', socket.id);

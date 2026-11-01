@@ -152,7 +152,43 @@ export default function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  const { rovers: socketRovers, connected, lastCompletion, lastPending, lastFailed } = useRoverSocket();
+  const { rovers: socketRovers, connected, lastReassignment, lastCompletion, lastPending, lastFailed } = useRoverSocket();
+
+  useEffect(() => {
+    if (!lastCompletion) return;
+    setMissionAlert({
+      type: 'completed',
+      name: `${lastCompletion.missionName} (Rover: ${lastCompletion.roverId})`,
+    });
+    setToastMessage(`Mission "${lastCompletion.missionName}" Completed by ${lastCompletion.roverId}!`);
+    fetchData();
+  }, [lastCompletion]);
+
+  useEffect(() => {
+    if (!lastPending) return;
+    setMissionAlert({
+      type: 'pending',
+      name: `${lastPending.missionName}${lastPending.reason ? ` — ${lastPending.reason}` : ''}`,
+    });
+    setToastMessage(`Mission "${lastPending.missionName}" Pending: ${lastPending.reason || 'Waiting for rover'}`);
+    fetchData();
+  }, [lastPending]);
+
+  useEffect(() => {
+    if (!lastFailed) return;
+    setMissionAlert({
+      type: 'failed',
+      name: `${lastFailed.missionName}${lastFailed.reason ? ` — ${lastFailed.reason}` : ''}`,
+    });
+    setToastMessage(`Mission "${lastFailed.missionName}" Failed: ${lastFailed.reason || 'Critical failure'}`);
+    fetchData();
+  }, [lastFailed]);
+
+  useEffect(() => {
+    if (!lastReassignment) return;
+    setToastMessage(`Mission "${lastReassignment.missionName}" reassigned to ${lastReassignment.newRover}`);
+    fetchData();
+  }, [lastReassignment]);
 
   useEffect(() => {
     const updates = Object.values(socketRovers);
@@ -251,7 +287,16 @@ export default function Home() {
 
 
       {selectedRover && <RoverDetailPanel rover={selectedRover} onClose={() => setSelectedRover(null)} onRecharge={handleRecharge} />}
-      {showCreateModal && <CreateModal onClose={() => setShowCreateModal(false)} onCreated={() => { fetchData(); setShowCreateModal(false); }} />}
+      {showCreateModal && (
+        <CreateModal
+          onClose={() => setShowCreateModal(false)}
+          onCreated={(msg) => {
+            fetchData();
+            setShowCreateModal(false);
+            if (msg) setToastMessage(msg);
+          }}
+        />
+      )}
       {toastMessage && <Toast message={toastMessage} onDismiss={() => setToastMessage(null)} />}
       {missionAlert && <MissionAlert type={missionAlert.type} missionName={missionAlert.name} onDismiss={() => setMissionAlert(null)} />}
     </div>
