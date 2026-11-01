@@ -9,7 +9,7 @@ export default function SolarEventTable() {
 
   useEffect(() => {
     // Use /latest (already limited server-side) instead of /events (all 28,470)
-    fetch("http://localhost:5000/api/solar/latest")
+    fetch(`${process.env.NEXT_PUBLIC_LOMS_API_URL || "http://localhost:5000"}/api/solar/latest`)
       .then((res) => res.json())
       .then((data) => {
         if (data && data.success && Array.isArray(data.data)) {
@@ -19,7 +19,7 @@ export default function SolarEventTable() {
       .catch((err) => console.error("Error loading event table:", err));
 
     // Separately fetch just the total count from summary (lightweight)
-    fetch("http://localhost:5000/api/solar/summary")
+    fetch(`${process.env.NEXT_PUBLIC_LOMS_API_URL || "http://localhost:5000"}/api/solar/summary`)
       .then((res) => res.json())
       .then((data) => {
         if (data?.success && data.data?.totalEvents) {

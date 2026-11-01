@@ -7,7 +7,7 @@ export default function SolarLatestEvents() {
   const [events, setEvents] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/solar/events")
+    fetch(`${process.env.NEXT_PUBLIC_LOMS_API_URL || "http://localhost:5000"}/api/solar/events`)
       .then((res) => res.json())
       .then((data) => {
         if (data && data.success && Array.isArray(data.data)) {

@@ -66,7 +66,7 @@ const [missionLng, setMissionLng] = useState('50');
     setLoading(true);
     setMessage(null);
     try {
-      const res = await fetch('http://localhost:5000/api/rovers', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_LOMS_API_URL || 'http://localhost:5000'}/api/rovers`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -108,7 +108,7 @@ const [missionLng, setMissionLng] = useState('50');
     setLoading(true);
     setMessage(null);
     try {
-      const res = await fetch('http://localhost:5000/api/missions', {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_LOMS_API_URL || 'http://localhost:5000'}/api/missions`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

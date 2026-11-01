@@ -11,7 +11,7 @@ export default function UnifiedSolarDashboard() {
 
   useEffect(() => {
     const fetchForecast = () => {
-      fetch("http://localhost:5000/api/solar-forecast")
+      fetch(`${process.env.NEXT_PUBLIC_LOMS_API_URL || "http://localhost:5000"}/api/solar-forecast`)
         .then((res) => res.json())
         .then((json) => {
           if (json && json.timeline && json.timeline.length > 0) {

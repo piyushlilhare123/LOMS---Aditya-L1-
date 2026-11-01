@@ -7,7 +7,7 @@ export default function RoverReplanningDashboard() {
   const [plan, setPlan] = useState<any>(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/rover-plan")
+    fetch(`${process.env.NEXT_PUBLIC_LOMS_API_URL || "http://localhost:5000"}/api/rover-plan`)
       .then((res) => res.json())
       .then((json) => setPlan(json))
       .catch((err) => console.error("Error loading rover plan:", err));
