@@ -21,6 +21,8 @@ import CameraRig from './components/CameraRig';
 import UnifiedSolarDashboard from "./components/UnifiedSolarDashboard";
 import RoverReplanningDashboard from "./components/RoverReplanningDashboard";
 import SolarEventDetails from "./components/SolarEventDetails";
+
+const API_BASE = process.env.NEXT_PUBLIC_LOMS_API_URL || "http://localhost:5000";
 function Earth() {
   const meshRef = useRef<THREE.Mesh>(null);
   const cloudsRef = useRef<THREE.Mesh>(null);
@@ -88,8 +90,8 @@ export default function Home() {
   const fetchData = async () => {
     try {
       const [roverRes, missionRes] = await Promise.all([
-        fetch('http://localhost:5000/api/rovers'),
-        fetch('http://localhost:5000/api/missions'),
+        fetch(`${API_BASE}/api/rovers`),
+        fetch(`${API_BASE}/api/missions`),
       ]);
       const roverData: RoverData[] = await roverRes.json();
       const missionData: MissionData[] = await missionRes.json();
@@ -116,7 +118,7 @@ export default function Home() {
   const handleResetRovers = async () => {
     if (!confirm('Delete all rovers?')) return;
     try {
-      await fetch('http://localhost:5000/api/rovers', { method: 'DELETE' });
+      await fetch(`${API_BASE}/api/rovers`, { method: 'DELETE' });
       setRovers([]);
       setTrails({});
       setSelectedRover(null);
@@ -126,7 +128,7 @@ export default function Home() {
   const handleResetMissions = async () => {
     if (!confirm('Delete all missions?')) return;
     try {
-      await fetch('http://localhost:5000/api/missions', { method: 'DELETE' });
+      await fetch(`${API_BASE}/api/missions`, { method: 'DELETE' });
       setMissions([]);
     } catch (err) { console.error(err); }
   };
@@ -135,7 +137,7 @@ export default function Home() {
     const rover = rovers.find((r) => r.roverId === roverId);
     if (!rover) return;
     try {
-      await fetch(`http://localhost:5000/api/rovers/${rover._id}`, {
+      await fetch(`${API_BASE}/api/rovers/${rover._id}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ battery: 100, status: rover.status === 'failed' ? 'idle' : rover.status }),
