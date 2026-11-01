@@ -41,7 +41,7 @@ export interface MissionFailedEvent {
   reason: string;
 }
 
-const SOCKET_URL = 'http://localhost:5000';
+const SOCKET_URL = process.env.NEXT_PUBLIC_LOMS_API_URL || 'http://localhost:5000';
 
 export function useRoverSocket() {
   const [rovers, setRovers] = useState<Record<string, Rover>>({});
